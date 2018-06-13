@@ -1,0 +1,22 @@
+
+[info 2018/06/13 13:47:48.581 IST <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.8.112(locator:13459:locator)<ec><v0>:1024|0] members: [192.168.8.112(locator:13459:locator)<ec><v0>:1024]
+
+[info 2018/06/13 13:48:01.706 IST <DM-MemberEventInvoker> tid=0x19] A new member joined: 192.168.8.112(server1:13472)<v1>:1025.  View[192.168.8.112(locator:13459:locator)<ec><v0>:1024|1] members: [192.168.8.112(locator:13459:locator)<ec><v0>:1024, 192.168.8.112(server1:13472)<v1>:1025{lead}]
+
+[info 2018/06/13 13:48:07.389 IST <DM-MemberEventInvoker> tid=0x19] A new member joined: 192.168.8.112(server2:13475)<v2>:1026.  View[192.168.8.112(locator:13459:locator)<ec><v0>:1024|2] members: [192.168.8.112(locator:13459:locator)<ec><v0>:1024, 192.168.8.112(server1:13472)<v1>:1025{lead}, 192.168.8.112(server2:13475)<v2>:1026]
+
+[info 2018/06/13 13:48:13.035 IST <DM-MemberEventInvoker> tid=0x19] A new member joined: 192.168.8.112(server3:13477)<v3>:1027.  View[192.168.8.112(locator:13459:locator)<ec><v0>:1024|3] members: [192.168.8.112(locator:13459:locator)<ec><v0>:1024, 192.168.8.112(server1:13472)<v1>:1025{lead}, 192.168.8.112(server2:13475)<v2>:1026, 192.168.8.112(server3:13477)<v3>:1027]
+
+[info 2018/06/13 13:48:57.979 IST <P2P message reader for 192.168.8.112(server1:13472)<v1>:1025 shared ordered uid=2 port=59178> tid=0x61] server count: 3 connected client count: 0 client subscription queue count: 0
+  current servers : 192.168.8.112(server1:13472)<v1>:1025 192.168.8.112(server2:13475)<v2>:1026 192.168.8.112(server3:13477)<v3>:1027 
+
+[info 2018/06/13 14:00:17.493 IST <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.8.112(locator:14023:locator)<ec><v0>:1024|0] members: [192.168.8.112(locator:14023:locator)<ec><v0>:1024]
+
+[info 2018/06/13 14:00:28.612 IST <DM-MemberEventInvoker> tid=0x19] A new member joined: 192.168.8.112(server1:14030)<v1>:1025.  View[192.168.8.112(locator:14023:locator)<ec><v0>:1024|1] members: [192.168.8.112(locator:14023:locator)<ec><v0>:1024, 192.168.8.112(server1:14030)<v1>:1025{lead}]
+
+[info 2018/06/13 14:00:33.221 IST <DM-MemberEventInvoker> tid=0x19] A new member joined: 192.168.8.112(server2:14032)<v2>:1026.  View[192.168.8.112(locator:14023:locator)<ec><v0>:1024|2] members: [192.168.8.112(locator:14023:locator)<ec><v0>:1024, 192.168.8.112(server1:14030)<v1>:1025{lead}, 192.168.8.112(server2:14032)<v2>:1026]
+
+[info 2018/06/13 14:00:38.835 IST <DM-MemberEventInvoker> tid=0x19] A new member joined: 192.168.8.112(server3:14033)<v3>:1027.  View[192.168.8.112(locator:14023:locator)<ec><v0>:1024|3] members: [192.168.8.112(locator:14023:locator)<ec><v0>:1024, 192.168.8.112(server1:14030)<v1>:1025{lead}, 192.168.8.112(server2:14032)<v2>:1026, 192.168.8.112(server3:14033)<v3>:1027]
+
+[info 2018/06/13 14:01:25.534 IST <P2P message reader for 192.168.8.112(server1:14030)<v1>:1025 shared ordered uid=2 port=59344> tid=0x61] server count: 3 connected client count: 0 client subscription queue count: 0
+  current servers : 192.168.8.112(server1:14030)<v1>:1025 192.168.8.112(server2:14032)<v2>:1026 192.168.8.112(server3:14033)<v3>:1027 

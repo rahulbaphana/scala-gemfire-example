@@ -1,0 +1,63 @@
+
+[info 2018/06/13 13:47:46.906 IST locator <main> tid=0x1] Starting peer location for Distribution Locator on 192.168.8.112[41111]
+
+[info 2018/06/13 13:47:46.914 IST locator <main> tid=0x1] Starting Distribution Locator on 192.168.8.112[41111]
+
+[info 2018/06/13 13:47:46.915 IST locator <main> tid=0x1] Locator was created at Wed Jun 13 13:47:46 IST 2018
+
+[info 2018/06/13 13:47:46.915 IST locator <main> tid=0x1] Listening on port 41111 bound on address 0.0.0.0/0.0.0.0
+
+[info 2018/06/13 13:47:46.915 IST locator <main> tid=0x1] GemFire peer location service starting.  Other locators: localhost[41111]  Locators preferred as coordinators: true  Network partition detection enabled: true  View persistence file: /Users/rahul/Development/gemfire_prac/scala-gemfire-prac/server-bootstrap/locator/locator41111view.dat
+
+[info 2018/06/13 13:47:46.916 IST locator <main> tid=0x1] Peer locator attempting to recover from localhost/127.0.0.1:41111
+
+[info 2018/06/13 13:47:46.939 IST locator <main> tid=0x1] Peer locator was unable to recover state from this locator
+
+[info 2018/06/13 13:47:46.940 IST locator <main> tid=0x1] recovery file not found: /Users/rahul/Development/gemfire_prac/scala-gemfire-prac/server-bootstrap/locator/locator41111view.dat
+
+[info 2018/06/13 13:47:46.941 IST locator <main> tid=0x1] Starting distributed system
+
+[warning 2018/06/13 13:59:13.117 IST locator <TransferQueueBundler,in-rahulkb-12850> tid=0x1d] JGRP000034: 192.168.8.112<v0>:1024: failure sending message to /192.168.8.112: java.net.SocketException: Socket is closed
+
+[info 2018/06/13 14:00:00.655 IST locator <main> tid=0x1] Starting peer location for Distribution Locator on 192.168.8.112[41111]
+
+[info 2018/06/13 14:00:00.663 IST locator <main> tid=0x1] Starting Distribution Locator on 192.168.8.112[41111]
+
+[info 2018/06/13 14:00:00.664 IST locator <main> tid=0x1] Locator was created at Wed Jun 13 14:00:00 IST 2018
+
+[info 2018/06/13 14:00:00.664 IST locator <main> tid=0x1] Listening on port 41111 bound on address 0.0.0.0/0.0.0.0
+
+[info 2018/06/13 14:00:00.665 IST locator <main> tid=0x1] GemFire peer location service starting.  Other locators: localhost[41111]  Locators preferred as coordinators: true  Network partition detection enabled: true  View persistence file: /Users/rahul/Development/gemfire_prac/scala-gemfire-prac/server-bootstrap/locator/locator41111view.dat
+
+[info 2018/06/13 14:00:00.666 IST locator <main> tid=0x1] Peer locator attempting to recover from localhost/127.0.0.1:41111
+
+[info 2018/06/13 14:00:00.689 IST locator <main> tid=0x1] Peer locator was unable to recover state from this locator
+
+[info 2018/06/13 14:00:00.689 IST locator <main> tid=0x1] Peer locator recovering from /Users/rahul/Development/gemfire_prac/scala-gemfire-prac/server-bootstrap/locator/locator41111view.dat
+
+[info 2018/06/13 14:00:00.693 IST locator <main> tid=0x1] Peer locator recovered membership is View[192.168.8.112(locator:13459:locator)<ec><v0>:1024|-1] members: [192.168.8.112(server1:13472)<v1>:1025{lead}, 192.168.8.112(server2:13475)<v2>:1026, 192.168.8.112(server3:13477)<v3>:1027]
+
+[info 2018/06/13 14:00:00.694 IST locator <main> tid=0x1] Starting distributed system
+
+[warning 2018/06/13 14:01:52.372 IST locator <pool-8-thread-1> tid=0x73] Remove Proxy failed for null due to GemFire:service=Region,name=/BookMaster,type=Member,member=server2
+org.apache.geode.cache.EntryDestroyedException: GemFire:service=Region,name=/BookMaster,type=Member,member=server2
+	at org.apache.geode.internal.cache.LocalRegion$NonTXEntry.basicGetEntry(LocalRegion.java:8695)
+	at org.apache.geode.internal.cache.LocalRegion$NonTXEntry.getKey(LocalRegion.java:8713)
+	at org.apache.geode.management.internal.MBeanProxyFactory.removeAllProxies(MBeanProxyFactory.java:166)
+	at org.apache.geode.management.internal.FederatingManager.removeMemberArtifacts(FederatingManager.java:223)
+	at org.apache.geode.management.internal.FederatingManager.stopManagingActivity(FederatingManager.java:145)
+	at org.apache.geode.management.internal.FederatingManager.stopManager(FederatingManager.java:133)
+	at org.apache.geode.management.internal.SystemManagementService.close(SystemManagementService.java:235)
+	at org.apache.geode.management.internal.beans.ManagementAdapter.handleCacheRemoval(ManagementAdapter.java:744)
+	at org.apache.geode.management.internal.beans.ManagementListener.handleEvent(ManagementListener.java:110)
+	at org.apache.geode.distributed.internal.InternalDistributedSystem.notifyResourceEventListeners(InternalDistributedSystem.java:2202)
+	at org.apache.geode.distributed.internal.InternalDistributedSystem.handleResourceEvent(InternalDistributedSystem.java:591)
+	at org.apache.geode.internal.cache.GemFireCacheImpl.close(GemFireCacheImpl.java:2148)
+	at org.apache.geode.distributed.internal.InternalDistributedSystem.disconnect(InternalDistributedSystem.java:1372)
+	at org.apache.geode.distributed.internal.InternalDistributedSystem.disconnect(InternalDistributedSystem.java:1022)
+	at org.apache.geode.management.internal.cli.functions.ShutDownFunction.lambda$disconnectInNonDaemonThread$0(ShutDownFunction.java:78)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
