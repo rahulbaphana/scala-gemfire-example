@@ -2,8 +2,7 @@
 import java.io.Serializable
 
 import org.apache.geode.cache.Region
-import org.apache.geode.cache.client.ClientCache
-import org.apache.geode.cache.client.ClientCacheFactory
+import org.apache.geode.cache.client.{ClientCache, ClientCacheFactory}
 
 case class Customer(id: Int, name: String) extends Serializable
 
