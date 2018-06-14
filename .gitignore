@@ -3,3 +3,7 @@ target/
 *.iml
 project/
 .DS_Store
+*.log
+*.crf
+*.pid
+server-bootstrap/locator

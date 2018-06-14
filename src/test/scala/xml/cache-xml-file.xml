@@ -22,4 +22,5 @@
 
     <region name="Customers" refid="PROXY" />
     <region name="Users" refid="PROXY" />
+
 </client-cache>

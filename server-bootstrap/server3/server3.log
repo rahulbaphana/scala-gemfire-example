@@ -1,4 +1,2 @@
 
-[warning 2018/06/13 14:00:40.040 IST server3 <main> tid=0x1] Handshaker max Pool size: 4
-
-[warning 2018/06/13 14:01:53.539 IST server3 <TransferQueueBundler,in-rahulkb-27303> tid=0x1b] JGRP000034: 192.168.8.112<v3>:1027: failure sending message to /192.168.8.112: java.net.SocketException: Socket is closed
+[warning 2018/06/14 14:45:53.288 IST server3 <main> tid=0x1] Handshaker max Pool size: 4
