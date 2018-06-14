@@ -2,7 +2,7 @@ package com.example.repository
 
 import java.util
 
-import com.example.model.{AccountTypeGroup, Position}
+import com.example.model.Position
 import org.apache.geode.cache.Region
 import org.apache.geode.cache.client.ClientCache
 import org.apache.geode.cache.query.{QueryService, SelectResults}
