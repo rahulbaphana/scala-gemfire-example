@@ -5,27 +5,7 @@
     xsi:schemaLocation="http://geode.apache.org/schema/cache http://geode.apache.org/schema/cache/cache-1.0.xsd"
     version="1.0">
 
-  <region name="Customers">
-    <region-attributes refid="REPLICATE"/>
-    <index name="PrimIndex">
-      <primary-key field="intValue"/>
-    </index>
-    <index name="customerNumberKeyIndex" from-clause="/Customer" expression="customerNumber" key-index="true" />
-  </region>
-
-  <region name="BookMaster">
-    <region-attributes refid="REPLICATE"/>
-  </region>
-
   <region name="Users">
-    <region-attributes refid="REPLICATE"/>
-  </region>
-
-  <region name="BookOrder">
-    <region-attributes refid="REPLICATE"/>
-  </region>
-
-  <region name="InventoryItem">
     <region-attributes refid="REPLICATE"/>
   </region>
 </cache>
