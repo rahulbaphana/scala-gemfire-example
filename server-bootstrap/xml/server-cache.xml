@@ -8,4 +8,7 @@
   <region name="Users">
     <region-attributes refid="REPLICATE"/>
   </region>
+  <region name="Positions">
+    <region-attributes refid="REPLICATE"/>
+  </region>
 </cache>
