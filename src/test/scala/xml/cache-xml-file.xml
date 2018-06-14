@@ -15,12 +15,11 @@
                 org.apache.geode.pdx.ReflectionBasedAutoSerializer
             </class-name>
             <parameter name="classes">
-                <string>com.example.model.User</string>
+                <string>com.example.model.*</string>
             </parameter>
         </pdx-serializer>
     </pdx>
 
-    <region name="Customers" refid="PROXY" />
+    <region name="Positions" refid="PROXY" />
     <region name="Users" refid="PROXY" />
-
 </client-cache>
