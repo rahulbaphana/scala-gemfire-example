@@ -8,7 +8,7 @@ import org.apache.geode.cache.Region
 import org.apache.geode.cache.client.ClientCache
 import org.apache.geode.cache.query.{QueryService, SelectResults}
 
-case class CustomerCache(clientCache: ClientCache) extends GemfireConnection {
+case class UserCache(clientCache: ClientCache) extends GemfireConnection {
   val reg: Region[Int, User] = clientCache.getRegion("Users")
 
   private val queryService: QueryService = clientCache.getQueryService()

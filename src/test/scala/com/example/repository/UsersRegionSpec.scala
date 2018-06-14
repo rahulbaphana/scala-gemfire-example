@@ -4,12 +4,11 @@ import com.example.base.BaseUnitSpec
 import com.example.connection.GemfireConnection
 import com.example.model.User
 
-class CustomersRegionSpec extends BaseUnitSpec {
-
+class UsersRegionSpec extends BaseUnitSpec {
 
   "Customer cache" should "fetch values from /Users region in gemfire" in {
     new GemfireConnection {
-      val customerCache = CustomerCache(cache)
+      val customerCache = UserCache(cache)
       customerCache.add(User(1234, "Rahul Baphana"))
       customerCache.add(User(1235, "Shirish Padalkar"))
       customerCache.add(User(1236, "John Doe"))
@@ -20,9 +19,9 @@ class CustomersRegionSpec extends BaseUnitSpec {
     }
   }
 
-  it should "add users to /Users" in {
+  it should "add user to /Users" in {
     new GemfireConnection {
-      val customerCache = CustomerCache(cache)
+      val customerCache = UserCache(cache)
       customerCache.add(User(1234, "Rahul Baphana"))
       customerCache.add(User(1235, "Shirish Padalkar"))
       customerCache.add(User(1236, "John Doe"))
