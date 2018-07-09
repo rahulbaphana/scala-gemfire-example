@@ -6,7 +6,7 @@
         version="1.0">
 
     <pool name="myLocatorPool">
-        <locator host="localhost" port="41111" />
+        <locator host="localhost" port="41111"/>
     </pool>
 
     <pdx>
@@ -20,6 +20,7 @@
         </pdx-serializer>
     </pdx>
 
-    <region name="Positions" refid="PROXY" />
-    <region name="Users" refid="PROXY" />
+    <region name="Positions" refid="PROXY"/>
+    <region name="NewPosition" refid="PROXY"/>
+    <region name="Users" refid="PROXY"/>
 </client-cache>

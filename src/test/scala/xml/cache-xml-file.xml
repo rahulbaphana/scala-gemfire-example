@@ -21,5 +21,6 @@
     </pdx>
 
     <region name="Positions" refid="PROXY" />
+    <region name="NewPosition" refid="PROXY" />
     <region name="Users" refid="PROXY" />
 </client-cache>
